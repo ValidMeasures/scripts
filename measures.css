@@ -1,0 +1,488 @@
+  body {
+    font-family: Open Sans, Arial, sans;
+  }
+  #layer-map,
+  #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
+  .map-tooltip {
+    min-width: inherit;
+    background:rgba(44,62,80,0.6);
+    color:#fff;
+  }
+
+  .map-tooltip h2 {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .map-tooltip table {
+    background:rgba(44,62,80,0.6);
+    color:#fff;
+  }
+
+  .map-tooltip td {
+    background:rgba(44,62,80,0.6);
+    color:#fff;
+  }
+
+  .map-legends.wax-legends {
+    background: rgba(44,62,80,0.6) !important;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    }
+
+  .legend label,
+  .legend span {
+    display:block;
+    float:left;
+    height:20px;
+    width:2.4px;
+    text-align:center;
+    font-size:10px;
+    color:#fff;
+    }  
+
+  .legendClass label,
+  .legendClass span {
+    display:block;
+    float:left;
+    height:20px;
+    width:80.8px;
+    text-align:center;
+    font-size:10px;
+    color:#fff;
+    }
+
+  .legendScale label,
+  .legendScale span {
+    display:block;
+    float:left;
+    height:20px;
+    width:24px;
+    text-align:center;
+    font-size:8px;
+    color:#fff;
+    }
+
+  .legendBF label,
+  .legendBF span {
+    display:block;
+    float:left;
+    height:20px;
+    width:40px;
+    text-align:center;
+    font-size:10px;
+    color:#fff;
+    }
+
+  .legendStunt label,
+  .legendStunt span {
+    display:block;
+    float:left;
+    height:20px;
+    width:60px;
+    text-align:center;
+    font-size:10px;
+    color:#fff;
+    }
+
+  .legendSST label,
+  .legendSST span {
+    display:block;
+    float:left;
+    height:20px;
+    width:48px;
+    text-align:center;
+    font-size:10px;
+    color:#fff;
+    }
+
+  .legendProjects .legend-title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+
+  .legendProjects .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+
+  .legendProjects .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+
+  .legendProjects ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+
+  .legendProjects .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+
+  .legendProjects a {
+    color: #777;
+    }
+
+  .legendIndex label,
+  .legendIndex span {
+    display:block;
+    float:left;
+    height:40px;
+    width:40px;
+    text-align:center;
+    font-size:40px;
+    font-weight:bolder;
+    color:#fff;
+    }
+
+  .filters-title {
+    font-size:14px;
+    font-weight:bold;
+    }
+
+  .ui-select {
+    background:rgba(44,62,80,0.6);
+    position:absolute;
+    bottom:140px;
+    right:10px;
+    z-index:100;
+    padding:10px;
+    border-radius:3px;
+    font-size:12px;
+    color:#fff;
+    width:240px;
+    }
+  
+  .custom-popup .leaflet-popup-content-wrapper {
+    background:rgba(44,62,80,0.8);
+    color:#fff;
+    font-size:16px;
+    line-height:24px;
+    }
+
+  .custom-popup .leaflet-popup-content-wrapper a {
+    color:rgba(255,255,255,0.5);
+    }
+
+  .custom-popup .leaflet-popup-tip-container {
+    width:30px;
+    height:15px;
+    }
+
+  .custom-popup .leaflet-popup-tip {
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-top:15px solid #2c3e50;
+    }
+
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+
+/*----- Branding -----*/
+.brand {
+    position:absolute;
+    top:10px;
+    left:50px;
+}
+
+
+/*----- Menu Outline -----*/
+.menu-wrap {
+    position:absolute;
+    top:0px;  
+    left:120px;
+}
+ 
+.menu {
+    width:100%;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    text-decoration: none;
+    font-size: 12px;
+    color:#fff;
+    background:rgba(44,62,80,0.6);    
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    background:rgba(44,62,80,0.6);
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+}
+
+.menu > ul > li > a {
+    padding:10px 30px;
+    display:inline-block;
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:rgba(44,62,80,1);
+}
+ 
+/*----- Bottom Level -----*/
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:10px;
+}
+ 
+.sub-menu li a {
+    padding:10px 10px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:rgba(44,62,80,1);
+}
+
+
+/*----- Menu Outline - Dark -----*/
+.menu-wrap-dark {
+    position:absolute;
+    top:0px;  
+    left:120px;
+}
+ 
+.menu-dark {
+    width:100%;
+    margin:0px auto;
+}
+ 
+.menu-dark li {
+    margin:0px;
+    list-style:none;
+}
+ 
+.menu-dark a {
+    transition:all linear 0.15s;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color:#002147;    
+}
+ 
+.menu-dark li:hover > a, .menu-dark .current-item > a {
+    text-decoration:none;
+    color:#fff;
+    background:rgba(44,62,80,0.6);
+}
+ 
+.menu-dark .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu-dark > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+}
+ 
+.menu-dark > ul > li > a {
+    padding:10px 20px;
+    display:inline-block;
+}
+ 
+.menu-dark > ul > li:hover > a, .menu-dark > ul > .current-item-dark > a {
+    background:rgba(44,62,80,0.6);
+}
+ 
+/*----- Bottom Level -----*/
+.menu-dark li:hover .sub-menu-dark {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu-dark {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+}
+ 
+.sub-menu-dark li {
+    display:block;
+    font-size:12px;
+}
+ 
+.sub-menu-dark li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu-dark li a:hover, .sub-menu-dark .current-item-dark a {
+    background:rgba(44,62,80,1);
+}
+
+
+/*----- Other menu -----*/
+
+#primary_nav_wrap {
+  margin-top:15px;
+  margin-left: 100px;
+}
+
+#primary_nav_wrap ul {
+  list-style:none;
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0 
+}
+
+#primary_nav_wrap ul a {
+  display:block;
+  color:#fff;
+  background:rgba(44,62,80,0.3);
+  text-decoration:none;
+  font-weight:700;
+  font-size:12px;
+  line-height:32px;
+  padding:0 15px;
+  font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0
+}
+
+#primary_nav_wrap ul li.current-menu-item {
+  background:rgba(44,62,80,0.6);
+  color:#fff;
+}
+
+#primary_nav_wrap ul li.current-menu-item a {
+  background:rgba(44,62,80,0.3);
+  color:#fff;
+}
+
+#primary_nav_wrap ul li:hover {
+  background:rgba(44,62,80,0.6);
+  color:#fff;
+}
+
+#primary_nav_wrap ul li:hover a {
+  background:rgba(44,62,80,0.3);
+  color:#fff;
+}
+
+#primary_nav_wrap ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:5px 5px
+}
+
+#primary_nav_wrap ul ul li {
+  float:none;
+  width:200px;
+}
+
+#primary_nav_wrap ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+#primary_nav_wrap ul ul ul {
+  top:0;
+  left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul {
+  display:block
+}
+
+
+/*----- PHP menu -----*/
+
+.navbar {
+  display:block;
+  position:relative;
+  float:left;
+  background:rgba(44,62,80,0.3);
+  line-height:32px;
+  padding:0 15px;
+  font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif  
+}
+
+.navbar a {
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  font-size:12px;
+}
+
+.navbar:hover {
+  background:rgba(44,62,80,0.6);
+  color:#fff;
+}
